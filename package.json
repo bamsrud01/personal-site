@@ -1,0 +1,23 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamsrud01/personal-site.git"
+  },
+  "author": "Barrett Amsrud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bamsrud01/personal-site/issues"
+  },
+  "homepage": "https://github.com/bamsrud01/personal-site#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1"
+  }
+}
