@@ -5,30 +5,38 @@
     <title>Barrett Amsrud</title>
     <script src="vendors/angular.min.js"></script>
     <script src="vendors/angular.min.js.map"></script>
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/site.controller.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   </head>
-  <body>
+  <body ng-app="personal">
+    <main ng-controller="SiteController as site">
 
-    <header>
-      <!-- Photo -->
-      <!-- Name -->
-      <!-- Links -->
-    </header>
+      <header>
+        <!-- Photo -->
+        <!-- Name -->
+        <!-- Links -->
+      </header>
 
-    <summary>
-      <!-- About me -->
-    </summary>
+      <summary>
+        <!-- About me -->
+      </summary>
 
-    <section id="projects">
-      <!-- ng-repeat project info/links.  Use modals? -->
-    </section>
+      <section id="projects">
+        <!-- ng-repeat project info/links.  Use modals? -->
+      </section>
 
-    <section id="tech">
-      <!-- ng-repeat tech icons here.  Make links? -->
-    </section>
+      <section id="tech">
+        <div ng-repeat="tech in site.techs">
+          <i class="{{tech.link}}"></i>
+          <h4>{{tech.name}}</h4>
+        </div>
+        <!-- ng-repeat tech icons here.  Make links? -->
+      </section>
 
-    <footer>
-      <!-- Again, links and contact info.  If template, give credit -->
-    </footer>
-    
+      <footer>
+        <!-- Again, links and contact info.  If template, give credit -->
+      </footer>
+    </main>
   </body>
 </html>
