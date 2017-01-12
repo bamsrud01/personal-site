@@ -8,35 +8,57 @@
     <script src="scripts/app.module.js"></script>
     <script src="scripts/site.controller.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body ng-app="personal">
     <main ng-controller="SiteController as site">
 
-      <header>
-        <!-- Photo -->
-        <!-- Name -->
-        <!-- Links -->
-      </header>
+      <!-- Main content of page -->
+      <div id="wrapper">
 
-      <summary>
-        <!-- About me -->
-      </summary>
+        <!-- Header: name, photo, contact links -->
+        <header>
+          <!-- Photo -->
+          <h1 id="name">Barrett Thomas Amsrud</h1>
+          <!-- Links -->
+        </header>
 
-      <section id="projects">
-        <!-- ng-repeat project info/links.  Use modals? -->
+        <!-- Bio -->
+        <summary id="bio">
+          <!-- About me -->
+        </summary>
+
+        <!-- Projects -->
+        <section id="projects">
+          <!-- ng-repeat project info/links.  Use modals? -->
+        </section>
+
+        <!-- Skills and technology -->
+        <section id="tech">
+          <div ng-repeat="tech in site.techs">
+            <i class="{{tech.link}} skill"></i>
+            <h4>{{tech.name}}</h4>
+          </div>
+          <!-- ng-repeat tech icons here.  Make links? -->
+        </section>
+
+        <!-- Links, contact info, maybe email -->
+        <footer>
+          <!-- Again, links and contact info.  If template, give credit -->
+        </footer>
+
+      </div>
+
+      <!-- Sidebar with nav elements -->
+      <section id="sidebar">
+        <!-- Photo/bio(?) -->
+        <!-- Nav to page sections -->
+        <nav id="nav">
+
+        </nav>
+        <!-- Maybe contact links here? -->
       </section>
 
-      <section id="tech">
-        <div ng-repeat="tech in site.techs">
-          <i class="{{tech.link}}"></i>
-          <h4>{{tech.name}}</h4>
-        </div>
-        <!-- ng-repeat tech icons here.  Make links? -->
-      </section>
-
-      <footer>
-        <!-- Again, links and contact info.  If template, give credit -->
-      </footer>
     </main>
   </body>
 </html>
