@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body ng-app="personal">
-    <main ng-controller="SiteController as site">
+    <main ng-controller="SiteController as site" id="container">
 
       <!-- Main content of page -->
       <div id="wrapper">
@@ -25,16 +25,19 @@
 
         <!-- Bio -->
         <summary id="bio">
+          <h3 class="section-title">About Me</h3>
           <!-- About me -->
         </summary>
 
         <!-- Projects -->
         <section id="projects">
+          <h3 class="section-title">My Work</h3>
           <!-- ng-repeat project info/links.  Use modals? -->
         </section>
 
         <!-- Skills and technology -->
         <section id="tech">
+          <h3 class="section-title">Skills</h3>
           <div ng-repeat="tech in site.techs" class="skill">
             <i class="{{tech.link}}"></i>
             <h4>{{tech.name}}</h4>
@@ -51,6 +54,7 @@
 
       <!-- Sidebar with nav elements -->
       <section id="sidebar">
+        <h1>Test</h1>
         <!-- Photo/bio(?) -->
         <!-- Nav to page sections -->
         <nav id="nav">

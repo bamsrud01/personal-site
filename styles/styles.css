@@ -1,3 +1,19 @@
+#container{
+  display: inline;
+}
+#wrapper{
+  width: 75%;
+  float: left;
+  display: inline-block;
+}
+#sidebar{
+  width: 25%;
+  float: right;
+  background-color: red;
+  margin-top: 5vh;
+  height: 90vh;
+  display: inline-block;
+}
 i {
   font-size: 4em;
 }
