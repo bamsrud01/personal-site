@@ -1,3 +1,9 @@
 i {
-  height: 500px;
+  font-size: 4em;
+}
+.skill {
+  float: left;
+  width: 6em;
+  border: 1px solid red;
+  margin: 1em;
 }
