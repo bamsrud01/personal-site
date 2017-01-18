@@ -28,7 +28,7 @@
           <h3 class="section-title">About Me</h3>
           <!-- About me -->
           <p>
-            I'm an eager and self-motivated developer, and am constantly strengthening and expanding my development skills.  I'm a strong communicator and collaborator, and I love solving problems with a team!  To me, there's nothing better than building elegant solutions to difficult problems. 
+            I'm an eager and self-motivated developer, and am constantly strengthening and expanding my development skills.  I'm a strong communicator and collaborator, and I love solving problems with a team!  To me, there's nothing better than building elegant solutions to difficult problems.
           </p>
         </summary>
 
@@ -36,16 +36,23 @@
         <section id="projects">
           <h3 class="section-title">My Work</h3>
           <!-- ng-repeat project info/links.  Use modals? -->
+          <div ng-repeat="project in site.projects" class="project">
+            <h4>{{project.name}}</h4>
+            <p>{{project.description}}</p>
+            <a href="{{project.github}}">GitHub</a>
+            <a ng-show="{{project.live}}" href="{{project.live}}">See it Live!</a>
+            <!-- Tech -->
+          </div>
         </section>
 
         <!-- Skills and technology -->
         <section id="tech">
           <h3 class="section-title">Skills</h3>
+          <!-- ng-repeat tech icons here.  Make links? -->
           <div ng-repeat="tech in site.techs" class="skill">
             <i class="{{tech.link}}"></i>
             <h4>{{tech.name}}</h4>
           </div>
-          <!-- ng-repeat tech icons here.  Make links? -->
         </section>
 
         <!-- Links, contact info, maybe email -->
