@@ -9,11 +9,80 @@ function SiteController() {
     //  live property is either set to false or is a link to live app (ng-if)
   site.projects = [
     //  Flashcard app
+    {
+      name: 'Learn Today',
+      description: 'Learn Today is a flashcard application allowing users' +
+        ' to create sets of flashcards that they may use to study.  Once' +
+        ' logged in, a user may create sets of flashcards using text and' +
+        ' images, as well as manage their existing sets.  All users are' +
+        ' able to use sets created by other users, and comment on these sets.' +
+        '  The user is also provided with a calendar that tracks their' +
+        ' performance, and recommends future study dates based on' +
+        ' past performance.',
+      github: 'https://github.com/bamsrud01/flashcard-app',
+      live: false,
+      tech: []
+    },
     //  Chef Marshall O'Brien
+    {
+      name: 'The Chef Marshall O\'Brien Group',
+      description: 'The Chef Marshall O\'Brien Group strives to make it easy' +
+        ' for people to make healthy choices in their lives.  They requested' +
+        ' an application that allows them to enter food nutrition data as a' +
+        ' numerical score, which is then displayed to users as a letter grade.' +
+        '  Each food is customizable, allowing users to modify foods by' +
+        ' adding condiments, toppings, and other options, all of which would' +
+        ' adjust the score of the food.  Users are able to provide feedback' +
+        ' and make requests, which the Chef Marshall O\'Brien Group is able' +
+        ' to address on the administrative side.',
+      github: 'https://github.com/ImJustVon/groupProject',
+      live: 'https://gentle-cliffs-66016.herokuapp.com/landing',
+      tech: []
+    },
     //  Giphy Finder
+    {
+      name: 'Giphy Keeper',
+      description: 'Giphy Keeper is an application that uses Giphy\'s API to ' +
+        'search Giphy for gifs.  The user is able to get random gifs, or ' +
+        'search for gifs by entering a search term.  Users are able to save' +
+        ' gifs as favorites, and add comments to these gifs.  The user is ' +
+        'also able to update comments and remove favorited gifs.',
+      github: 'https://github.com/bamsrud01/Weekend-Challenge-05-Giphy-App',
+      live: false,
+      tech: []
+    },
     //  Full-Stack Calculator
-    //  Sketchpad
-    //  Memory
+    {
+      name: 'Full-Stack Calculator',
+      description: 'This calculator handles simple addition, subtraction,' +
+        ' multiplication, and division.  The application utilizes Express to' +
+        ' send the numbers to the appropriate server route, where they are' +
+        ' evaluated, and the result is sent back to the client,' +
+        ' and displayed to the user.',
+      github: 'https://github.com/bamsrud01/rho-weekend-03-calculator',
+      live: false,
+      tech: []
+    },
+    //  Sketchpad -- Currently inactive
+    /*
+    {
+      name: 'Sketchpad',
+      description: ,
+      github: ,
+      live: ,
+      tech: []
+    },
+    */
+    //  Memory -- Currently inactive
+    /*
+    {
+      name: 'Memory',
+      description: ,
+      github: ,
+      live: ,
+      tech: []
+    }
+    */
   ]
 
   //  Tech: array of objects
