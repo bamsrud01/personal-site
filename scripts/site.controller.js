@@ -62,31 +62,10 @@ function SiteController() {
       github: 'https://github.com/bamsrud01/rho-weekend-03-calculator',
       live: false,
       tech: []
-    },
-    //  Sketchpad -- Currently inactive
-    /*
-    {
-      name: 'Sketchpad',
-      description: ,
-      github: ,
-      live: ,
-      tech: []
-    },
-    */
-    //  Memory -- Currently inactive
-    /*
-    {
-      name: 'Memory',
-      description: ,
-      github: ,
-      live: ,
-      tech: []
     }
-    */
   ]
 
   //  Tech: array of objects
-    //  {name, link, info(?)}
     //  give credit to image site
   site.techs = [
     { name: 'AngularJS', link: 'devicon-angularjs-plain colored' },
