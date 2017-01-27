@@ -20,7 +20,7 @@ function SiteController() {
         ' performance, and recommends future study dates based on' +
         ' past performance.',
       github: 'https://github.com/bamsrud01/flashcard-app',
-      live: false,
+      live: 'https://murmuring-temple-79939.herokuapp.com/home',
       tech: []
     },
     //  Chef Marshall O'Brien
